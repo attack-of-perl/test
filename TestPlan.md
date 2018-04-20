@@ -1,4 +1,6 @@
-Test Plan
+*Test Plan*
+Author: Zachary Perlman
+
 
 Basic Joining Test
 
