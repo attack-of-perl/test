@@ -1,9 +1,13 @@
+//created by Zachary Perlman
+//usage: make sure to increment runNum before running test 
 var webdriver = require ('selenium-webdriver'),
 By = webdriver.By,
 until = webdriver.until;
+Keys = webdriver.Key;
 const time = 5000;
-var runNum = 11; //MUST INCREMENT BEFORE RUNNING AGAIN
+var runNum = 22; //MUST INCREMENT BEFORE RUNNING AGAIN
 var driver = new webdriver.Builder().forBrowser('chrome').build();
+
 
 
 
@@ -13,7 +17,7 @@ driver.wait(until.elementLocated(By.id("join-hive")),time).then(driver.findEleme
 
 
 //driver.wait(until.elementLocated(By.className("hv btn btn-primary js-ob-video-continue")),time).then(click());
-driver.sleep(3000);
+driver.sleep(4000);
 driver.findElement(By.className("hv btn btn-primary js-ob-video-continue")).click();
 
 //driver.wait(until.elementIsEnabled(By.id("firstName")),time).then(fill);
@@ -38,8 +42,8 @@ driver.sleep(1000);
 driver.findElement(By.className("hv btn btn-primary js-complete-step ladda-button")).click();
 
 //continue
-driver.sleep(4000);
-driver.findElement(By.className("hv btn btn-primary js-complete-step")).click();
+driver.sleep(3000);
+driver.findElement(By.className("js-action-input")).submit();
 
 //skip
 driver.sleep(1000);
@@ -47,7 +51,7 @@ driver.findElement(By.className("hv btn btn-default js-skip-step")).click();
 
 //skip
 driver.sleep(1000);
-driver.findElement(By.className("hv btn btn-default js-complete-step")).click().then(console.log("successful sign up"));
+driver.findElement(By.className("hv btn btn-default js-complete-step")).click();
 
 console.log("made it!")
 
