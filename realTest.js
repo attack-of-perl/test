@@ -5,7 +5,7 @@ By = webdriver.By,
 until = webdriver.until;
 Keys = webdriver.Key;
 const time = 5000;
-var runNum = 22; //MUST INCREMENT BEFORE RUNNING AGAIN
+var runNum = 25; //MUST INCREMENT BEFORE RUNNING AGAIN
 var driver = new webdriver.Builder().forBrowser('chrome').build();
 
 
