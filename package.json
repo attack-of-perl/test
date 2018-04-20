@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zach-perl/test/issues"
   },
-  "homepage": "https://github.com/zach-perl/test#readme"
+  "homepage": "https://github.com/zach-perl/test#readme",
+  "dependencies": {
+    "selenium-webdriver": "^3.6.0"
+  }
 }
