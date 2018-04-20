@@ -5,7 +5,7 @@ By = webdriver.By,
 until = webdriver.until;
 Keys = webdriver.Key;
 const time = 5000;
-var runNum = 25; //MUST INCREMENT BEFORE RUNNING AGAIN
+var runNum = 27; //MUST INCREMENT BEFORE RUNNING AGAIN
 var driver = new webdriver.Builder().forBrowser('chrome').build();
 
 
@@ -17,7 +17,7 @@ driver.wait(until.elementLocated(By.id("join-hive")),time).then(driver.findEleme
 
 
 //driver.wait(until.elementLocated(By.className("hv btn btn-primary js-ob-video-continue")),time).then(click());
-driver.sleep(4000);
+driver.sleep(2000);
 driver.findElement(By.className("hv btn btn-primary js-ob-video-continue")).click();
 
 //driver.wait(until.elementIsEnabled(By.id("firstName")),time).then(fill);
