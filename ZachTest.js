@@ -41,3 +41,8 @@ function quitDriver() {
 } 
 driver.get('http://crossbrowsertesting.github.io/selenium_example_page.html'); 
 driver.wait(checkTitle, 1000).then(quitDriver, handleFailure);
+
+
+//my code down here
+document.getElementById("join-hive").click()
+document.getElementsByClassName("hv btn btn-primary js-ob-video-continue")[0].click() //continue button
