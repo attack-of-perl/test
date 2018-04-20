@@ -4,4 +4,7 @@ until = webdriver.until;
 
 var driver = new webdriver.Builder().forBrowser('chrome').build();
 
-driver.get('http://google.com');
+driver.get('https://staging.hive.com/');
+
+
+driver.quit();
