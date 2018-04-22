@@ -27,3 +27,10 @@ Basic Joining Test
 10.	Test Ability to connect file storage (Drive, box, Dropbox)
     - Click Finish if you connected one
     - Click "No thanks, I'll do this later" otherwise
+
+**Notes**
+
+Things to consider while manually testing:
+- Make sure that all functionality works if a user starts down a path but then decides to go back and not finish that initial path (for example starting the task of connecting google drive but then deciding not to) and then continuing with the sign up process
+- Evaluate how the program responds if you quit unexpectedly--if a user starts to sign up and does not finish, can they still sign up with the same email?
+- Make sure going backwards and changing previously inputted fields reflects correctly after sign up is completed.
