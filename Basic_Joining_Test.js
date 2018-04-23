@@ -1,11 +1,11 @@
 //created by Zachary Perlman
-//usage: make sure to increment runNum before running test 
+//usage: make sure to increment runNum before running test
 var webdriver = require ('selenium-webdriver'),
 By = webdriver.By,
 until = webdriver.until;
 Keys = webdriver.Key;
 const time = 5000;
-var runNum = 27; //MUST INCREMENT BEFORE RUNNING AGAIN
+var runNum = 28; //MUST INCREMENT BEFORE RUNNING AGAIN
 var driver = new webdriver.Builder().forBrowser('chrome').build();
 
 
